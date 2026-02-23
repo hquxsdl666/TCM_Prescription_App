@@ -53,8 +53,12 @@ jobs:
           ${{ runner.os }}-buildozer-
           
     - name: Build APK with Buildozer
+      env:
+        ANDROID_SDK_HOME: ${{ runner.temp }}/android-sdk
       run: |
-        buildozer android debug
+        export ANDROID_SDK_ROOT=${{ runner.temp }}/android-sdk
+        mkdir -p $ANDROID_SDK_ROOT
+        yes | buildozer android debug
       timeout-minutes: 60
       
     - name: Upload APK artifact

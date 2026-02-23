@@ -1,0 +1,31 @@
+# 中药处方识别整理软件依赖
+
+# 核心框架
+kivy==2.2.1
+kivymd==1.1.1
+
+# 数据库
+sqlite3
+
+# OCR识别
+# pytesseract==0.3.10  # 需要安装Tesseract OCR引擎
+# pillow==10.0.0
+
+# Excel处理
+openpyxl==3.1.2
+
+# 数据分析
+# pandas==2.0.3
+# numpy==1.24.3
+
+# 图表绘制
+# matplotlib==3.7.2
+
+# 网络请求
+# requests==2.31.0
+
+# 大模型API
+# openai==0.28.0
+
+# 其他工具
+python-dateutil==2.8.2
